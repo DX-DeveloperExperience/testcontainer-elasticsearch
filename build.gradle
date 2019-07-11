@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'dx'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "org.testcontainers:testcontainers:1.11.3"
+    testCompile "org.testcontainers:elasticsearch:1.11.3"
+    testCompile 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.2.0'
+
+}
